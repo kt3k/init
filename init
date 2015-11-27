@@ -1,0 +1,21 @@
+#! /bin/sh
+
+INIT_DIR=$(dirname $0)
+DEST_DIR=./
+
+
+if [ -z "$1" ]; then
+    echo "Usage: init filename"
+    exit 1
+fi
+
+TARGET_FILE=$INIT_DIR/$1
+
+if [ ! -f "$TARGET_FILE" ]; then
+    echo No such file: $1 in $INIT_DIR
+    exit 1
+fi
+
+# copy
+echo Copy $1 from $INIT_DIR/ to $DEST_DIR
+cp $INIT_DIR/$1 $DEST_DIR
