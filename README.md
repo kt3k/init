@@ -34,6 +34,10 @@
     init LICENSE
 
   The above copys LICENSE file from ~/.init to the current dir.
+  
+## Example
+
+- [My own init](https://github.com/kt3k/my-init)
 
 # LICENSE
 
