@@ -1,44 +1,37 @@
 # init
 
-> Initialize files with placeholders
+If you copy the same boilerplate files (ex. LICENSE) to cwd number of times, then this small script might be useful to you.
+
+You can initialize the boilerplate like:
+
+```sh
+init LICENSE
+```
+
+This copies LICENSE from `$HOME/.init/LICENSE` to `$PWD/LICENSE`. This script could be powerful for quickly starting up the project from the terminal.
 
 # Usage
 
 ## Set up
 
-  Clone this repository
+Clone this repository
 
-    git clone https://github.com/kt3k/init ~/.init
+```sh
+git clone https://github.com/kt3k/init ~/.init
+```
 
-  Add $HOME/.init to `PATH` variable
+Add $HOME/.init to `PATH` variable
 
-    export PATH="$HOME/.init:$PATH"
+```sh
+export PATH="$HOME/.init:$PATH"
+```
 
-  Add anything you want to use as a placeholder for the file of the name
+Add boilerplate files you often want to copy. e.g. `LICENSE`, `.gitignore`, `.editorconfig`, etc.
 
-    cd ~/.init
-
-    # put anything here
-
-  For example, LICENSE, .gitignore and .editorconfig are good examples of useful placeholders
-
-    $ cd ~/.init
-    $ ls
-    init LICENSE .gitignore .editorconfig
-
-
-## Use
-
-  Then `init` command copies anything from your `~/.init` directory to the current dir.
-
-    init LICENSE
-
-  The above copys LICENSE file from ~/.init to the current dir.
-  
 ## Example
 
 - [My own init](https://github.com/kt3k/my-init)
 
 # LICENSE
 
-  MIT
+MIT
