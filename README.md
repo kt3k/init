@@ -10,9 +10,9 @@
 
     git clone https://github.com/kt3k/init ~/.init
 
-  Add ~/.init to `PATH` variable
+  Add $HOME/.init to `PATH` variable
 
-    echo export PATH=~/.init:\$PATH >> ~/.bash_profile
+    export PATH="$HOME/.init:$PATH"
 
   Add anything you want to use as a placeholder for the file of the name
 
