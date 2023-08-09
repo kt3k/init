@@ -5,7 +5,7 @@ DEST_DIR=./
 
 
 if [ -z "$1" ]; then
-    echo "Usage: init filename"
+    echo "Usage: init <filename>"
     exit 1
 fi
 
